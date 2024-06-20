@@ -1,13 +1,42 @@
-body {
-  height: 100vh;
-  background-image: linear-gradient(rgb(255, 255, 255), rgb(109, 39, 239));
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap");
 .logo {
   display: block;
   margin: auto;
-  width: 50px;
-  height: 50px;
+}
+body {
+  height: 100vh;
+  background-color: rgb(
+    158,
+    160,
+    180
+  ); /* For browsers that do not support gradients */
+  background-image: radial-gradient(
+    rgb(214, 186, 214),
+    rgb(158, 160, 180),
+    rgb(151, 148, 169)
+  );
+  padding: 0px;
+  margin: 0px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 h1 {
@@ -18,18 +47,26 @@ h1 {
 }
 
 .container {
-  max-width: 955px;
-  border: 2px solid black;
+  width: 80%;
   margin: auto;
-  height: 60vh;
+  height: 40vh;
   padding: 33px;
   overflow-y: auto;
   margin-bottom: 23px;
-  border-radius: 10px;
+  border-radius: 50px;
+
+  border: 15px solid hsla(0, 0%, 100%, 0.5);
+  background-image: url(../images/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.send {
+  margin-top: -100px;
+  width: 100%;
 }
 
 .message {
-  background-color: rgb(241, 240, 240);
+  background-color: grey;
   width: 24%;
   padding: 10px;
   margin: 17px 12px;
@@ -48,29 +85,22 @@ h1 {
 }
 
 #send-container {
+  width: 80%;
   display: block;
-  margin: auto;
+  position: relative;
+  margin-left: 10%;
+  top: 5%;
   text-align: center;
-  max-width: 1067px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #messageInp {
-  width: 89%;
-  border: 2px solid black;
-  border-radius: 6px;
-  height: 34px;
-  font-size: 22px;
+  display: none;
+  position: relative;
+  top: 5%;
 }
-
 .btn {
-  cursor: pointer;
-  border: 2px solid black;
   border-radius: 6px;
-  height: 40px;
-  width: 5%;
-  margin: 0 5px;
+  border: 2px solid black;
+  background-color: grey;
+  position: relative;
 }
